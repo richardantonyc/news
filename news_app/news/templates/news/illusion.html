@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link  href="{% static 'css/pages.css' %}" rel="stylesheet" >
+<link  href="{% static 'css/pages.css' %}" rel="stylesheet" >
+<h2>Illusion</h2>
+<p>The Only Cure for Loss of Illusions is Fresh Illusions</p>
+<img src="{% static 'images/photos/illusion.jpg'%}" alt="color" />
+<h3>Illusion</h3>
+<h3>Optical Illusion</h3>
+<p>
+    When an image is constructed in such a way that it misleading information to the brain.
+</p>
+<h3>Auditory Illusion</h3>
+<p>
+    It occurs when a person hears sounds that are not actually being made or sounds that are disortions of the actual tones.
+</p>
+<h3>Tactile Illusion</h3>
+<p>
+    It cause the brain to percieve touch stimuli that is not actually present in the way the brain percieves it.
+</p>
+<h3>Taste Illusion</h3>
+<p>
+    It cause the brain to perceive conflicting information about the stimuli producing the smell.
+</p>
+<h3>Smell Illusion</h3>
+<p>
+    It cause the brain to perceive conflicting information about the stimuli producing the taste.
+</p>
+<h3>Hallucination</h3>
+<p>
+    Hallucination are different from Illusion.<br>
+    Hallucination invloves the sensing and feeling is real but it is not real.<br>
+    It occurs for many reasons such as light on object.<br>
+    Example: Hearing voices tha tnobody hears.<br>
+</p>
+<h3>Delusion</h3>
+<p>
+    It is a false belief that persists in spite of evidence or something that is falsely believed.<br>
+
+</p><br>
+<a href="{% url 'color' %}" class="previous">&laquo; previous</a><br><br>
+{% endblock %}

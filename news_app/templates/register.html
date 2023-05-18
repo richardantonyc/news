@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link  href="{% static 'css/pages.css' %}" rel="stylesheet" >
+<link  href="{% static 'css/register.css' %}" rel="stylesheet" >
+<form method="POST" novalidate>
+    {% csrf_token %}
+    <h3>Register</h3>
+    <!--{{ form.as_p }}-->
+    {% for field in form %}
+    <p>
+        {% if field.errors %}
+        <ul class="errorlist">
+            {% for error in field.errors %}
+               <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        <label><br>{{ field.label_tag }} </label>
+        {{ field }}
+        <br>
+    </p>
+    {% endfor %}
+    <br><input type="submit" value="Register" /><br>
+    <p>Already,have an account<a href="{% url 'login' %}">Login</a></p>
+</form>
+{% endblock content %}

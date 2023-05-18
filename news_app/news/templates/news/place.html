@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link  href="{% static 'css/pages.css' %}" rel="stylesheet" >
+<link  href="{% static 'css/pages.css' %}" rel="stylesheet" >
+<h2>Top Tourist Places</h2>
+<h3><b>1.ChinaWall</b></h3>
+<img src="{% static 'images/photos/chinawall.jpg'%}"  /><br>
+<h3><b>2.Pyramid</b></h3>
+<img src="{% static 'images/photos/pyramid.jpg'%}" /><br>
+<h3><b>3.Taj Mahal</b></h3>
+<img src="{% static 'images/photos/taj_mahal.jpg'%}"  /><br>
+<h3><b>4.Varanasi</b></h3>
+<img src="{% static 'images/photos/varanasi.jpg'%}"  /><br>
+<h3><b>5.Ladakh</b></h3>
+<img src="{% static 'images/photos/ladakh.jpg'%}"  /><br>
+<a href="{% url 'color' %}" class="next">next &raquo;</a><br><br>
+{% endblock content %}

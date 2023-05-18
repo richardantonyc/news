@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link  href="{% static 'css/pages.css' %}" rel="stylesheet" >
+<link  href="{% static 'css/register.css' %}" rel="stylesheet" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<form method="POST" novalidate>
+    {% csrf_token %}
+    <h3>Login</h3>
+    {{ form.as_p}}
+    <br><input type="submit" value="Login" /><br>
+    <p>Don't have an account?<a href="{% url 'register' %}">Register</a></p>
+</form>
+
+
+{% endblock content %}

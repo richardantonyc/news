@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{%load static%}
+{% block content%}
+<link  href="{% static 'css/pages.css' %}" rel="stylesheet" >
+<link  href="{% static 'css/mystyle.css' %}" rel="stylesheet" >
+<h2>Color</h2>
+<picture>
+    <source media="(min-width:700px)" srcset="{% static 'images/photos/colorb.jpg'%}">
+    <img src="{% static 'images/photos/color.jpg'%}" alt="color" style="max-width:100%;height:auto;" />
+</picture>
+<p>Color has a Power which directly influences our Soul</p>
+<h3>Red</h3>
+<img src="{% static 'images/photos/red.jpg'%}" /><br>
+<p>
+    Red is the color of Energy,Passion and Action.<br>
+    It excludes Strong and Powerful Energy.<br>
+    It brings Emotions in us, and Motivates us to take Action.<br>
+    It is Warm and Positive,associated with Our Physical Needs and Our Will for Survival.<br>
+</p>
+<h3>Blue</h3>
+<img src="{% static 'images/photos/blue.jpg'%}"  /><br>
+<p>
+    Blue is the color of Peace and Harmony.<br>
+    It is the color of Maturity,Rationality,Precision,Capabilities,High values.<br>
+    It is the color of Trust and Honesty .<br>
+    It is Reliable and Responsilble and points to Internal Security and Trust.<br>
+</p>
+<h3>Green</h3>
+<img src="{% static 'images/photos/green.jpg'%}"  /><br>
+<p>
+    Green is the color of Balance and Harmony.<br>
+    It is the color of Growth,Spring,Renewal and Rebirth.<br>
+    Green promotes Love for nature,Family,Friends,Pets and Home.<br>
+    It is the color of Stability and Durability.<br>
+</p>
+<h3>White</h3>
+<img src="{% static 'images/photos/white.jpg'%}" /><br>
+<p>
+    White is the color of Perfection.<br>
+    It is the color of Charity.<br>
+    It is the meaning of Purity,Innocence,Fullness and Completion.<br>
+    White offers Interior cleaning,cleaning of our Thoughts and Emotions<br>
+</p>
+<h3>Black</h3>
+<img src="{% static 'images/photos/black.jpg'%}" /><br>
+<p>
+    Black is the color of Mystery and unkonown.<br>
+    It means Protection against External Emotional Stress.<br>
+    It is Intimidating,Unfriendly and Unapprachable.<br>
+    It absorbs Negativity.<br>
+</p>
+<div class="pn">
+<a href="{% url 'place' %}" class="previous">&laquo; previous</a>
+<a href="{% url 'illusion' %}" class="next">next &raquo;</a><br><br>
+</div>
+<br>
+<br>
+<!--
+<h3>Orange</h3>
+<p></p>
+<h3>Violet</h3>
+<p></p>
+<h3>Yellow</h3>
+<p></p>
+<h3>Indigo</h3>
+<p></p>
+<h3>Pink</h3>
+<p></p>
+-->
+
+{% endblock %}
+
